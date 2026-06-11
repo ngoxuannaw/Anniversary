@@ -714,6 +714,17 @@ button:focus-visible {
   box-shadow: 0 0 10px #86edbd;
 }
 
+.hand-control.is-loading .hand-status-dot {
+  background: #ffd88b;
+  box-shadow: 0 0 10px #ffd88b;
+  animation: twinkle 0.8s ease-in-out infinite alternate;
+}
+
+.hand-control.is-unavailable .hand-status-dot {
+  background: #ff9baf;
+  box-shadow: 0 0 10px #ff9baf;
+}
+
 .hand-control > button {
   min-height: 35px;
   padding: 0 0.7rem;

@@ -1,7 +1,8 @@
-import { OrbitControls, Sparkles, Stars } from "@react-three/drei";
+import { OrbitControls, Sparkles } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
+import DeepStarField from "./DeepStarField";
 import MainStar from "./MainStar";
 import StarCluster from "./StarCluster";
 
@@ -36,10 +37,10 @@ function SceneContent({
   return (
     <>
       <color attach="background" args={["#060611"]} />
-      <fog attach="fog" args={["#080816", 9, 23]} />
-      <ambientLight intensity={0.28} color="#aca7ff" />
-      <Stars radius={70} depth={38} count={2400} factor={3.2} saturation={0.15} fade speed={0.45} />
-      <Sparkles count={95} scale={[15, 8, 15]} size={1.1} speed={0.22} opacity={0.35} color="#ffb5d0" />
+      <fog attach="fog" args={["#080816", 10, 29]} />
+      <ambientLight intensity={0.18} color="#aca7ff" />
+      <DeepStarField />
+      <Sparkles count={125} scale={[17, 9, 17]} size={1.25} speed={0.18} opacity={0.28} color="#ffb5d0" />
       <MainStar />
       {memories.map((memory, index) => (
         <StarCluster
