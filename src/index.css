@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
 :root {
+  --font-body: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Be Vietnam Pro", "Segoe UI", system-ui, sans-serif;
+  --font-script: "Segoe Script", "Be Vietnam Pro", "Brush Script MT", cursive;
   color: #fff8fb;
   background: #070711;
-  font-family: "Segoe UI", Inter, system-ui, sans-serif;
+  font-family: var(--font-body);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   --pink: #ff8db8;
@@ -185,7 +189,7 @@ button:focus-visible {
 
 .home-copy h1 {
   margin: 0.8rem 0 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-display);
   font-size: clamp(2rem, 4.8vw, 4.7rem);
   font-weight: 400;
   letter-spacing: -0.045em;
@@ -346,7 +350,7 @@ button:focus-visible {
   place-items: center;
   border-radius: 50%;
   color: rgba(255,255,255,.78);
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 0.8rem;
   background: #944c67;
   box-shadow: inset 0 0 0 3px rgba(255,255,255,.08), 0 3px 8px rgba(38, 12, 23, .35);
@@ -478,7 +482,7 @@ button:focus-visible {
 .letter-paper h2 {
   max-width: 570px;
   margin: 0.8rem 0 1.8rem;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-display);
   font-size: clamp(1.7rem, 3.5vw, 3rem);
   font-weight: 500;
   letter-spacing: -0.035em;
@@ -486,7 +490,7 @@ button:focus-visible {
 }
 
 .letter-body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   font-size: clamp(0.98rem, 1.4vw, 1.08rem);
   line-height: 1.85;
 }
@@ -497,14 +501,14 @@ button:focus-visible {
 
 .letter-ending {
   margin: 1.7rem 0 0;
-  font-family: Georgia, serif;
+  font-family: var(--font-body);
   font-style: italic;
 }
 
 .letter-signature {
   margin: 0.35rem 0 1.8rem;
   color: #ad6686;
-  font-family: "Segoe Script", "Brush Script MT", cursive;
+  font-family: var(--font-script);
   font-size: 1.8rem;
 }
 
@@ -543,7 +547,7 @@ button:focus-visible {
 
 .galaxy-header h1 {
   margin: 0.3rem 0 0;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.6vw, 2.4rem);
   font-weight: 400;
   letter-spacing: -0.035em;
@@ -633,7 +637,7 @@ button:focus-visible {
 
 .cluster-label strong {
   margin-top: 0.2rem;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 0.74rem;
   font-weight: 400;
 }
@@ -802,7 +806,7 @@ button:focus-visible {
   bottom: 1rem;
   left: 1rem;
   color: rgba(255,255,255,.82);
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 2rem;
 }
 
@@ -816,7 +820,7 @@ button:focus-visible {
 .memory-copy h2,
 .guide-card h2 {
   margin: 0.7rem 0 1rem;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 3.4rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -826,7 +830,7 @@ button:focus-visible {
 .memory-copy p {
   margin: 0;
   color: rgba(255,255,255,.6);
-  font-family: Georgia, serif;
+  font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -899,7 +903,7 @@ button:focus-visible {
 
 .gesture-grid strong {
   margin: 0.55rem 0 0.35rem;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1rem;
 }
 
