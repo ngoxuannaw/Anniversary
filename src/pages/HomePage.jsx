@@ -47,9 +47,9 @@ export default function HomePage({ onOpen }) {
         ))}
       </div>
       <div className="home-copy">
-        <span className="eyebrow">A LITTLE SOMETHING FOR YOU</span>
+        <span className="eyebrow">Thông Báo</span>
         <h1>
-          Hi love, <em>I made this bouquet for you.</em>
+          Nguyễn Thu Hà, <em>Em có một message từ NXN.</em>
         </h1>
       </div>
       <Bouquet />
