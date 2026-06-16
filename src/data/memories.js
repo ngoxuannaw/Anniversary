@@ -28,11 +28,13 @@ const colors = [
   "#ffb2c8",
 ];
 
+const publicAssetPath = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const memories = captions.map(([title, caption], index) => ({
   id: index + 1,
   title,
   caption,
-  image: `/memories/memory-${String(index + 1).padStart(2, "0")}.jpg`,
+  image: `${import.meta.env.BASE_URL}memories/memory-${String(index + 1).padStart(2, "0")}.jpg`,
   color: colors[index],
   orbitRadius: 3.5 + (index % 4) * 0.72,
   orbitSpeed: 0.055 + (index % 5) * 0.009,
